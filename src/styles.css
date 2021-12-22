@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* basic reset */
+
+/* 
+#000000
+#51b6b6
+#5ce1c6
+#99d9d9
+#c6efef
+ */
+
+ *,
+ *::before,
+ *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+ }
+ 
+ html {
+   font-size: 62.5%; /*10px = 1rem */
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: sans-serif;
+ }
+ 
+ .header {
+   position: relative;
+   background-image: linear-gradient(
+       hsla(0, 0%, 100%, 0.8),
+       rgba(255, 255, 255, 0.8)
+     ),
+     url("assets/img/pexels-shvets-production-8413181.jpg");
+   background-size: cover;
+   height: 100vh;
+   padding: 2rem;
+ }
+ 
+ .top {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .logo {
+   font-size: 2.5rem;
+   color: #51b6b6;
+   font-weight: bolder;
+ }
+ 
+ .nav {
+   display: flex;
+ }
+ 
+ .header-text {
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .header-text-main {
+   color: #51b6b6;
+   font-size: 5rem;
+   letter-spacing: 0.5rem;
+   text-align: center;
+ }
+ 
+ .header-text-sub {
+   text-align: center;
+   font-size: 1.6rem;
+   margin-top: 2.5rem;
+   line-height: 2.5rem;
+   margin-bottom: 7rem;
+ }
+ 
+ .btn {
+   position: absolute;
+   top: 70%;
+   left: 56%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+ }
+ 
+ .btn-link,
+ .btn-link:link,
+ .btn-link:active {
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.6rem;
+   display: block;
+   background-color: #51b6b6;
+   padding: 1rem 3rem;
+   border-radius: 1rem;
+ }
+ 
+ .btn-text {
+   display: block;
+ }
+ 
+ .form {
+   background-color: #99d9d9;
+   padding: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .form-input {
+   border: 0.5rem solid #51b6b6;
+   border-radius: 1.2rem;
+   text-align: center;
+   width: 40%;
+   padding: 4rem 3rem;
+ }
+ 
+ #email,
+ #password {
+   padding: 2rem 4rem;
+   margin-bottom: 2rem;
+   font-size: 1.6rem;
+   text-align: center;
+ }
+ 
+ .email-label,
+ .password-email {
+   display: block;
+   text-align: left;
+ }
+ 
+ .submit-form {
+   margin-top: 6rem;
+   background-color: #51b6b6;
+   padding: 2rem 4rem;
+   border-radius: 2rem;
+   font-size: 2rem;
+   font-weight: bolder;
+ }
+ 
+ .history {
+   padding: 10rem;
+ }
+ 
+ .history-head {
+   text-align: center;
+   color: #333;
+   margin-bottom: 4rem;
+   font-size: 2.4rem;
+ }
+ 
+ .cards {
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .history-card {
+   background-color: #51b6b6;
+   padding: 2rem 1rem;
+   border-radius: 1rem;
+   font-size: 1.6rem;
+   width: 15%;
+ }
+ 
+ .text-1 {
+   margin-bottom: 2rem;
+ }
+ 
+ .text-3 {
+   color: #99d9d9;
+   margin-top: 2rem;
+   text-align: center;
+   font-size: 2rem;
+ }
+ 
